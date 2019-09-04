@@ -1,0 +1,14 @@
+<div class="row  border-bottom">
+    <div class="col-lg-12">
+        <div class="tab_title">
+            <ul class="nav nav-pills">
+                <li {% if current == 'index' or current == 'info' or current == 'set' %}class="current"{% endif %}>
+                    <a href="{{ buildUrl('/book/index') }}">书籍列表</a>
+                </li>
+                <li {% if current == 'cat' or current == 'cat_set' %}class="current"{% endif %}>
+                    <a href="{{ buildUrl('/book/cat') }}">分类列表</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
