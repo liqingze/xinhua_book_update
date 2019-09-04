@@ -3,25 +3,8 @@
 ### Linux:
 * export ops_config=local|production && python manager.py runserver
 
-* 使用flask-sqlacodegen扩展方便快速生成ORM model
-pip install flask
-
-###Windows:
+### Windows:
 * set ops_config=local|production && python manager.py runserver
-
-* 使用flask-sqlacodegen扩展方便快速生成ORM model<br>
-pip install flask-sqlacodegen<br>
-
-    flask-sqlacodegen "mysql://数据库用户名:数据库密码@loc
-alhost/数据库名称" --tables 表名 --outfile "生成路径" --f
-lask
-
-    ps:flask-sqlacodegen "mysql://root:root@loc
-alhost/book_db" --tables user --outfile "common/models/User.py" --f
-lask
-
-* hasattr(object, name):对象中存在name返回True，否则False
-* getattr(object, name):对象中存在name返回name值
 
 * 小程序分享功能无法触发成功或失败的点击事件
 百度（"微信小程序转发不执行success"）
